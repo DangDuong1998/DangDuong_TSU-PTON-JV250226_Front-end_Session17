@@ -84,7 +84,7 @@ AllOther.forEach((button)=>{
         if(valueB === '.'){
             let check = result.split(/[\+\-\*\/]/);
             let curNumber = check[check.length-1];
-            if(!curNumber.includes('.')){
+            if(!curNumber.includes('.') && Number(curNumber)){
                 monitor.innerText += valueB;
                 result += valueB;
             }
