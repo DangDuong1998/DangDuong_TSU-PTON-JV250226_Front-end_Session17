@@ -38,11 +38,12 @@ AllOperator.forEach((button)=>{
                 monitor.innerText += valueO ;
                 result = valueO;
             }
-            else if(!lastChar.includes('-')){
+            else if(lastChar !== '-' && lastChar !=='.'){
                 flag=false;
                 monitor.innerText += ex + valueO ;
                 result += valueO;
             }
+            
         }
         else if(!isNaN(lastChar)){
             flag=false;
